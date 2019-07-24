@@ -11,9 +11,12 @@
       "schematics": {},
       "architect": {
         "deploy": {
-          "builder": "@example/command-runner:deploy",
+          "builder": "@netlify-builder/command-runner:deploy",
           "options": {
             "command": "deploy",
+            "outputPath": "dist/builder-test",
+            "netlifyToken": "tokenValue",
+            "siteId": "siteId",
             "args": [
               "src/main.ts"
             ]

@@ -1,5 +1,5 @@
 {
-  "name": "@netlify/command-runner",
+  "name": "@netlify-builder/command-runner",
   "version": "1.0.0",
   "description": "",
   "main": "command/index.js",
@@ -20,6 +20,7 @@
     "typescript": "^3.4.3"
   },
   "dependencies": {
-    "@angular-devkit/architect": "^0.800.0-beta.11"
+    "@angular-devkit/architect": "^0.800.0-beta.11",
+    "netlify": "^2.4.6"
   }
 }
