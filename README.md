@@ -1,4 +1,4 @@
-# Architect API demo
+# Netlify Builder demo
 
 This repository contains an example of the Angular CLI Architect API.
 
@@ -49,7 +49,22 @@ yarn install
 npm link @netlify-builder/deploy
 ```
 
-3. Test the command
+3. Provide below config in angular.json
+```json
+   "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "command": "deploy",
+            "outputPath": "dist/builder-test",
+            "netlifyToken": "tokenValue",
+            "siteId": "siteId",
+            "args": [
+              "src/main.ts"
+            ]
+          }
+        }
+``1
+4. Test the command
 
 ```sh
 ng run builder-test:deploy
