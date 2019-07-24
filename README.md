@@ -63,7 +63,8 @@ npm link @netlify-builder/deploy
             ]
           }
         }
-``1
+```
+
 4. Test the command
 
 ```sh
