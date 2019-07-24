@@ -1,5 +1,5 @@
 {
-  "name": "@netlify-builder/command-runner",
+  "name": "@netlify-builder/deploy",
   "version": "1.0.0",
   "description": "",
   "main": "command/index.js",

@@ -46,7 +46,7 @@ yarn install
 2. Link the package
 
 ```sh
-npm link @netlify/command-runner
+npm link @netlify-builder/deploy
 ```
 
 3. Test the command
