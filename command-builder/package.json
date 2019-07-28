@@ -1,16 +1,34 @@
 {
   "name": "@netlify-builder/deploy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "command/index.js",
   "builders": "builders.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santoshyadav198613/netlify-builder.git"
+  },
   "scripts": {
     "build": "tsc",
     "test": "ts-node node_modules/jasmine/bin/jasmine command/index_spec.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "angular",
+    "cli",
+    "angular-cli",
+    "netlify",
+    "deploy",
+    "ng deploy",
+    "ng-deploy",
+    "netlify deploy",
+    "netlify-deploy"
+  ],
+  "author": "Santosh Yadav <santosh.yadav198613@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/santoshyadav198613/netlify-builder/issues"
+  },
+  "homepage": "https://github.com/santoshyadav198613/netlify-builder#readme",
   "devDependencies": {
     "@types/jasmine": "^3.3.12",
     "@types/node": "^11.13.4",
