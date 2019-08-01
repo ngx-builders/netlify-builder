@@ -13,8 +13,10 @@ interface Options extends JsonObject {
 export default createBuilder<Options>(
   async (builderConfig: any, context: BuilderContext): Promise<BuilderOutput> => {
     context.reportStatus(`Executing "${builderConfig.command}"...`);
-    console.log(builderConfig.command);
-    console.log(builderConfig.outputPath);
+     
+    console.log(`Executing ${builderConfig.command} command ...... `);
+    console.log(`Deploying project from the location ./"${builderConfig.outputPath}`);
+ 
     const client: any = new NetlifyAPI(builderConfig.netlifyToken,
       {
         userAgent: 'netlify/js-client',
@@ -25,5 +27,7 @@ export default createBuilder<Options>(
       });
 
     const response = await client.deploy(builderConfig.siteId, builderConfig.outputPath);
+    console.log('\x1b[32m', `Your site is ready at ${response && response.deploy && response.deploy.ssl_url}`);
+    
     return { success: true };
   });
