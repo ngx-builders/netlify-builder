@@ -56,8 +56,8 @@ npm link @netlify-builder/deploy
           "options": {
             "command": "deploy",
             "outputPath": "dist/builder-test",
-            "netlifyToken": "tokenValue",
-            "siteId": "siteId",
+            "netlifyToken": "[tokenValue]",
+            "siteId": "[siteId]",
             "args": [
               "src/main.ts"
             ]
