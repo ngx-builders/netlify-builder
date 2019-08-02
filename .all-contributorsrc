@@ -1,0 +1,23 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "nitishk72",
+      "name": "Nitish Kumar Singh",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/15886737?v=4",
+      "profile": "https://www.youtube.com/c/NitishKumarSingh",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "netlify-builder",
+  "projectOwner": "ngx-builders",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
