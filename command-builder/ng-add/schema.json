@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "netlify-builder-deploy-ng-add",
+    "title": "Netlify Builder ng-add schematic",
+    "type": "object",
+    "properties": {
+        "siteID": {
+            "type": "string",
+            "description": "You can find the Site ID on Netlify Settings/Genral",
+            "x-prompt": "API ID( Site ID ) of Netlify project"
+        },
+        "netlifyToken": {
+            "type": "string",
+            "description": "You can create a new API for free !",
+            "x-prompt": "Your Personal access tokens of Netlify Account"
+        }
+    },
+    "required": [
+        "siteID",
+        "netlifyToken"
+    ]
+}

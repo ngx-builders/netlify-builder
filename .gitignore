@@ -2,3 +2,6 @@
 *.map
 node_modules
 *.d.ts
+*.js
+*.js.map
+.gitignore

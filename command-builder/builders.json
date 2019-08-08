@@ -1,9 +1,10 @@
-{
-  "builders": {
-    "deploy": {
-      "implementation": "./command",
-      "schema": "./command/schema.json",
-      "description": "Runs any command line in the operating system."
+    {
+      "$schema": "@angular-devkit/architect/src/builders-schema.json",
+      "builders": {
+        "deploy": {
+          "implementation": "./deploy",
+          "schema": "./deploy/schema.json",
+          "description": "Runs any command line in the operating system."
+        }
+      }
     }
-  }
-}
