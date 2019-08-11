@@ -9,7 +9,7 @@ import {
 function addPackageJsonDependencies(): Rule {
     return (host: Tree, context: SchematicContext) => {
         const dependencies: NodeDependency[] = [
-            { type: NodeDependencyType.Default, version: '~1.9.0', name: 'netlify-builder/deploy' }
+            { type: NodeDependencyType.Default, version: '~1.0.3', name: 'netlify-builder/deploy' }
         ];
 
         dependencies.forEach(dependency => {

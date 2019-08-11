@@ -1,6 +1,6 @@
 {
   "name": "@netlify-builder/deploy",
-  "version": "1.9.0",
+  "version": "1.0.3",
   "description": "A Netlify builder schematics for deployment",
   "main": "index.js",
   "builders": "builders.json",
