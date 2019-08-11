@@ -1,19 +1,21 @@
 {
   "name": "@netlify-builder/deploy",
   "version": "1.0.3",
-  "description": "",
-  "main": "command/index.js",
+  "description": "A Netlify builder schematics for deployment",
+  "main": "index.js",
   "builders": "builders.json",
+  "schematics": "collection.json",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/santoshyadav198613/netlify-builder.git"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.json",
     "test": "ts-node node_modules/jasmine/bin/jasmine command/index_spec.ts"
   },
   "keywords": [
     "angular",
+    "schematics",
     "cli",
     "angular-cli",
     "netlify",
@@ -24,6 +26,9 @@
     "netlify-deploy"
   ],
   "author": "Santosh Yadav <santosh.yadav198613@gmail.com>",
+  "contributors": [
+    "Nitish Kumar Singh <nitishk72@gmail.com> (https://nitishk72.github.io)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/santoshyadav198613/netlify-builder/issues"
@@ -39,6 +44,8 @@
   },
   "dependencies": {
     "@angular-devkit/architect": "^0.800.0-beta.11",
+    "@angular-devkit/core": "^8.2.0",
+    "schematics-utilities": "^1.1.3",
     "netlify": "^2.4.6"
   }
 }

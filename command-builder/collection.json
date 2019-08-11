@@ -1,0 +1,13 @@
+{
+    "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+    "schematics": {
+      "ng-add": {
+        "description": "A Netlify Deploy schematic.",
+        "factory": "./ng-add/index",
+        "schema": "./ng-add/schema.json",
+        "aliases": [
+          "install"
+        ]
+      }
+    }
+  }
