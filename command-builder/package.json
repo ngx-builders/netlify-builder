@@ -3,8 +3,8 @@
   "version": "1.0.4",
   "description": "A Netlify builder schematics for deployment",
   "main": "index.js",
-  "builders": "builders.json",
-  "schematics": "collection.json",
+  "builders": "./builders.json",
+  "schematics": "./collection.json",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/santoshyadav198613/netlify-builder.git"

@@ -3,7 +3,6 @@ import { JsonObject } from '@angular-devkit/core';
 const NetlifyAPI = require('netlify')
 
 interface Options extends JsonObject {
-  command: string;
   outputPath: string;
   netlifyToken: string,
   siteId: string,
@@ -12,8 +11,8 @@ interface Options extends JsonObject {
 
 export default createBuilder<Options>(
   async (builderConfig: Options, context: BuilderContext): Promise<BuilderOutput> => {
-    context.reportStatus(`Executing "${builderConfig.command}"...`);
-    context.logger.info(`Executing ${builderConfig.command} command ...... `);
+    context.reportStatus(`Executing deploy...`);
+    context.logger.info(`Executing deploy command ...... `);
 
     const configuration = builderConfig.configuration ? builderConfig.configuration : 'production';
 
