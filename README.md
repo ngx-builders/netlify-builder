@@ -1,5 +1,7 @@
-# Netlify Builder demo
+[![Build Status](https://travis-ci.org/ngx-builders/netlify-builder.svg?branch=master)](https://travis-ci.org/nitishk72/netlify-builder)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+# Netlify Builder demo
+
 
 This repository contains an example of the Angular CLI Architect API.
 

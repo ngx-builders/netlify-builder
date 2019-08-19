@@ -12,7 +12,7 @@
         "netlifyToken": {
             "type": "string",
             "description": "You can create a new API for free !",
-            "x-prompt": "Your Personal access tokens of Netlify Account"
+            "x-prompt": "Personal Access Tokens of Netlify Account"
         }
     },
     "required": [

@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "9"
+dist: trusty
+sudo: required
+
+branches:
+  only:
+  - master
+
+before_script:
+  - cd command-builder
+  - npm install
+  - npm install -g @angular-devkit/schematics-cli
+
+
+script:
+  - npm run build

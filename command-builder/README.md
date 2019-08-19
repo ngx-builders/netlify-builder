@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ngx-builders/netlify-builder.svg?branch=master)](https://travis-ci.org/nitishk72/netlify-builder)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 # Angular CLI Deployment to netlify
 
 Deploy your Angular app to Netlify directly from the Angular CLI! 🚀
