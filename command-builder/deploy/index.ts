@@ -28,6 +28,10 @@ export default createBuilder<Options>(
     if (buildResult.success) {
       context.logger.info(`✔ Build Completed`);
       const netlifyToken = process.env.NETLIFY_TOKEN || builderConfig.netlifyToken;
+      if (netlifyToken == '' || netlifyToken == undefined) {
+        context.logger.error("🚨 Netlify Token not found !");
+        return { success: false };
+      }
       const client = new NetlifyAPI(netlifyToken,
         {
           userAgent: 'netlify/js-client',
@@ -45,11 +49,15 @@ export default createBuilder<Options>(
       }
       context.logger.info(`✔ User Verified`);
       const siteId = process.env.NETLIFY_API_ID || builderConfig.siteId;
+      if (siteId == '' || siteId == undefined) {
+        context.logger.error("🚨 API ID (Site ID) not found !");
+        return { success: false };
+      }
       const isSiteValid = sites.find(site => siteId === site.site_id);
       if (isSiteValid) {
         context.logger.info(`✔ Site ID Confirmed`);
 
-        const response = await client.deploy(builderConfig.siteId, builderConfig.outputPath);
+        const response = await client.deploy(siteId, builderConfig.outputPath);
         context.logger.info(`Deploying project from the location 📂  ./"${builderConfig.outputPath}`);
         context.logger.info(`\n ✔ Your updated site 🕸 is running at ${response && response.deploy && response.deploy.ssl_url}`);
 
