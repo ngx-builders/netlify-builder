@@ -1,6 +1,7 @@
 import { BuilderContext, BuilderOutput, createBuilder } from '@angular-devkit/architect';
 import { JsonObject } from '@angular-devkit/core';
-const NetlifyAPI = require('netlify')
+const NetlifyAPI = require('netlify');
+
 
 interface Options extends JsonObject {
   outputPath: string;
@@ -26,7 +27,8 @@ export default createBuilder<Options>(
 
     if (buildResult.success) {
       context.logger.info(`✔ Build Completed`);
-      const client = new NetlifyAPI(builderConfig.netlifyToken,
+      const netlifyToken = process.env.NETLIFY_TOKEN || builderConfig.netlifyToken;
+      const client = new NetlifyAPI(netlifyToken,
         {
           userAgent: 'netlify/js-client',
           scheme: 'https',
@@ -42,7 +44,8 @@ export default createBuilder<Options>(
         return { success: false };
       }
       context.logger.info(`✔ User Verified`);
-      const isSiteValid = sites.find(site => builderConfig.siteId === site.site_id);
+      const siteId = process.env.NETLIFY_API_ID || builderConfig.siteId;
+      const isSiteValid = sites.find(site => siteId === site.site_id);
       if (isSiteValid) {
         context.logger.info(`✔ Site ID Confirmed`);
 

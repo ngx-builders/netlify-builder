@@ -2,44 +2,22 @@
 
 Deploy your Angular app to Netlify directly from the Angular CLI! 🚀
 
-## How to use ?
+## Prerequisite
 
-It's a small two step JOB ?
-- Install the @netlify-builder/deploy
-- Configure the Angular project with your netlify account
+You will need two things in order to get started
 
-## Step 1
+- API ID (Site ID) : Every netlify app have a API ID which uniquly identify that app. You can find this inside your project's Setting/General section.
+![alt text](https://github.com/nitishk72/netlify-builder/blob/master/screenshots/api-id.png)
+- [Personal access tokens](https://app.netlify.com/user/applications#personal-access-tokens) : Acess token give you the ability to communicate with netlify over API. This will help you in pushing the code on Netlify.
+![alt text](https://github.com/nitishk72/netlify-builder/blob/master/screenshots/personal-access-token.png)
+
+## Setting up this Builder
 
 ```
-npm i @netlify-builder/deploy
+ng add @netlify-builder/deploy
 ```
 
-## Step 2
-
-Open the `angular.json` and add this code inside the **architect** object.
-
-```json
-   "deploy": {
-          "builder": "@netlify-builder/deploy:deploy",
-          "options": {
-            "command": "deploy",
-            "outputPath": "dist/[YOUR_PROJECT_NAME]",
-            "netlifyToken": "[YOUR_NETLIFY_TOKEN]",
-            "siteId": "[YOUR_SITE_ID]"
-          }
-        }
-```
-- *We need to update 3 data in this code.*
-
-   - YOUR_PROJECT_NAME
-   - YOUR_NETLIFY_TOKEN
-   - YOUR_SITE_ID
-
-1.  netlifyToken : token provided by netlify, generate one from [netlify](https://app.netlify.com/user/applications#personal-access-tokens).
-
-2. siteId: siteId for your application, every site has unique siteId. Site ID is also known as **API ID** . You can find this inside your project's Setting/General section.
-
-3. outputPath: By default output path of any angular project is `dist/[YOUR_PROJECT_NAME]`. This is the path where your project get build.
+This command will configure everything, you just need to provide API ID and Personal access tokens when it will ask you for that.
 
 ## That's it. Now, you are good to go
 
