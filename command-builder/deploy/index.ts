@@ -1,31 +1,30 @@
 import { BuilderContext, BuilderOutput, createBuilder } from '@angular-devkit/architect';
 import { JsonObject } from '@angular-devkit/core';
+import { Schema } from './schema';
+
 const NetlifyAPI = require('netlify');
 
-
-interface Options extends JsonObject {
-  outputPath: string;
-  netlifyToken: string,
-  siteId: string,
-  configuration: string;
-}
-
-export default createBuilder<Options>(
-  async (builderConfig: Options, context: BuilderContext): Promise<BuilderOutput> => {
+export default createBuilder<any>(
+  async (builderConfig: Schema, context: BuilderContext): Promise<BuilderOutput> => {
     context.reportStatus(`Executing deploy...`);
     context.logger.info(`Executing deploy command ...... `);
+    let buildResult;
+    if (builderConfig.noBuild) {
+      context.logger.info(`📦 Skipping build`);
+      buildResult = true;
+    } else {
+      const configuration = builderConfig.configuration ? builderConfig.configuration : 'production';
 
-    const configuration = builderConfig.configuration ? builderConfig.configuration : 'production';
+      const build = await context.scheduleTarget({
+        target: 'build',
+        project: context.target !== undefined ? context.target.project : '',
+        configuration
+      });
 
-    const build = await context.scheduleTarget({
-      target: 'build',
-      project: context.target !== undefined ? context.target.project : '',
-      configuration
-    });
+      buildResult = await build.result;
+    }
 
-    let buildResult = await build.result;
-
-    if (buildResult.success) {
+    if (buildResult.success || buildResult) {
       context.logger.info(`✔ Build Completed`);
       const netlifyToken = process.env.NETLIFY_TOKEN || builderConfig.netlifyToken;
       if (netlifyToken == '' || netlifyToken == undefined) {

@@ -1,15 +1,30 @@
 {
-  "$schema": "http://json-schema.org/schema",
-  "type": "object",
+  "id": "Schema",
+  "title": "schema",
+  "description": "Deployment of Angular CLI applications to Netlify",
   "properties": {
-    "command": {
-      "type": "string"
+    "configuration": {
+      "type": "string",
+      "default": "production",
+      "description": "A named build target, as specified in the `configurations` section of angular.json. Each named target is accompanied by a configuration of option defaults for that target. Same as `ng build --configuration=XXX`.",
+      "alias": "c"
     },
-    "args": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+    "noBuild": {
+      "type": "boolean",
+      "default": false,
+      "description": "Skip build process during deployment."
+    },
+    "outputPath": {
+      "type": "string",
+      "description": "This is one of the options you can freely choose according to your needs. --- We will 'deploy' to this folder."
+    },
+    "netlifyToken": {
+      "type": "string",
+      "description": "Acess token give you the ability to communicate with netlify over API."
+    },
+    "siteId": {
+      "type": "string",
+      "description": "Every netlify app have a API ID which uniquly identify that app."
     }
   }
 }
