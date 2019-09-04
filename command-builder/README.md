@@ -25,6 +25,35 @@ This command will configure everything, you just need to provide API ID and Pers
 
 Now whenever you want to deploy your angular project just run a command `ng run [YOUR_PROJECT_NAME]:deploy` and your project got live with new update.
 
+
+## 📦 Options <a name="options"></a>
+
+#### --configuration <a name="configuration"></a>
+ * __optional__
+ * Alias: `-c`
+ * Default: `production` (string)
+ * Example:
+    * `ng deploy` – Angular project is build in production mode
+    * `ng deploy --configuration=test` – Angular project is using the configuration `test` (this configuration must exist in the `angular.json` file)
+
+A named build target, as specified in the `configurations` section of `angular.json`.
+Each named target is accompanied by a configuration of option defaults for that target.
+Same as `ng build --configuration=XXX`.
+This command has no effect if the option `--no-build` option is active.
+
+
+#### --no-build <a name="no-build"></a>
+ * __optional__
+ * Default: `false` (string)
+ * Example:
+    * `ng deploy` – Angular project is build in production mode before the deployment
+    * `ng deploy --no-build` – Angular project is NOT build
+
+Skip build process during deployment.
+This can be used when you are sure that you haven't changed anything and want to deploy with the latest artifact.
+This command causes the `--configuration` setting to have no effect.
+
+
 ## License
 
 MIT

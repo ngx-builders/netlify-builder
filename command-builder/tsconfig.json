@@ -2,7 +2,7 @@
   "compilerOptions": {
     "moduleResolution": "node",
     "module": "commonjs",
-    "target": "es6",
+    "target": "es2015",
     "lib": [
       "es2015",
       "dom",
@@ -18,6 +18,7 @@
     "strictNullChecks": true,
     "sourceMap": true,
     "declaration": false,
+    "inlineSources": true,
     "stripInternal": true,
     "skipLibCheck": true,
     "noImplicitAny": false,
