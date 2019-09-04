@@ -15,6 +15,10 @@ export default createBuilder<any>(
     } else {
       const configuration = builderConfig.configuration ? builderConfig.configuration : 'production';
 
+      if (!context.target) {
+        throw new Error('Cannot deploy the application without a target');
+      }
+
       const build = await context.scheduleTarget({
         target: 'build',
         project: context.target !== undefined ? context.target.project : '',
