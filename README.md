@@ -74,6 +74,8 @@ npm link @netlify-builder/deploy
 ng run builder-test:deploy
 ```
 Step By Step Guide To Using the Angular Builder for Netlify
+>
+> -- <cite>Tara Z. Manicsic</cite>
 =====================================
 
 I was stoked to try out the [`netlify-builder`](https://github.com/ngx-builders/netlify-builder) built for the Angular CLI by [Santosh Yadav](https://www.santoshyadav.dev). It’s _super_ easy to use. One thing I was hesitant 😬 about was putting my personal access token in the public `angular.json` file. Instead I made a script to deploy any project by passing in my token as an environment variable. Come code with me 🤗.
@@ -114,7 +116,7 @@ _code to run in the command line:_
 
 > ‼️ UPDATE: Since writing this post and creating these videos the Angular CLI team released a minor update that changes the deploy command from `ng run <project name>:deploy` to, simply, `ng deploy`. If you see this old command syntax in the video just know that the Angular CLI team has just saved you all those keystrokes 😍.
 
-<img alt="gif" src="" height=100% width=100% />
+<img alt="gif" src="screenshots/gif1.gif" height=100% width=100% />
 
 🌈 Way Cooler Last Step 🧜‍
 ---------------------------
@@ -127,7 +129,7 @@ _code to add to `~/.bashrc`:_
       NETLIFY_TOKEN=<token> ng deploy
     }
 
-<img alt="gif" src="" height=100% width=100% />
+<img alt="gif" src="screenshots/gif2.gif" height=100% width=100% />
 
 Here’s what we’ve accomplished in this post:
 
