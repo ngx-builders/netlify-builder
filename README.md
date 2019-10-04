@@ -102,6 +102,8 @@ The next step in the builder setup asks for our Personal Access Token but we don
 
 We want to avoid ☠️having that sensitive information in a public file that anyone can see. Luckily, the way Santosh set up the builder we don’t have to add the Token here, [instead it will check for an environment variable](https://github.com/ngx-builders/netlify-builder/blob/master/command-builder/deploy/index.ts#L33). So, we just hit enter to skip that part.
 
+<img alt="gif" src="screenshots/gif1.gif" height=100% width=100% />
+
 Second || Final Step: setting the Token 🗝 variable
 ---------------------------------------------------
 
@@ -119,7 +121,7 @@ _code to run in the command line:_
 
 > ‼️ UPDATE: Since writing this post and creating these videos the Angular CLI team released a minor update that changes the deploy command from `ng run <project name>:deploy` to, simply, `ng deploy`. If you see this old command syntax in the video just know that the Angular CLI team has just saved you all those keystrokes 😍.
 
-<img alt="gif" src="screenshots/gif1.gif" height=100% width=100% />
+<img alt="gif" src="screenshots/gif2.gif" height=100% width=100% />
 
 🌈 Way Cooler Last Step 🧜‍
 ---------------------------
@@ -132,7 +134,7 @@ _code to add to `~/.bashrc`:_
       NETLIFY_TOKEN=<token> ng deploy
     }
 
-<img alt="gif" src="screenshots/gif2.gif" height=100% width=100% />
+<img alt="gif" src="screenshots/gif3.gif" height=100% width=100% />
 
 Here’s what we’ve accomplished in this post:
 
