@@ -1,3 +1,4 @@
+
 [![Build Status](https://travis-ci.org/ngx-builders/netlify-builder.svg?branch=master)](https://travis-ci.org/nitishk72/netlify-builder)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 # Netlify Builder demo
@@ -73,10 +74,12 @@ npm link @netlify-builder/deploy
 ```sh
 ng run builder-test:deploy
 ```
-Step By Step Guide To Using the Angular Builder for Netlify
+
+Step By Step Guide To Using the Angular Builder for Netlify
+===========================================================
 >
-> -- <cite>Tara Z. Manicsic</cite>
-=====================================
+> --- <cite>Tara Z. Manicsic</cite>
+
 
 I was stoked to try out the [`netlify-builder`](https://github.com/ngx-builders/netlify-builder) built for the Angular CLI by [Santosh Yadav](https://www.santoshyadav.dev). It’s _super_ easy to use. One thing I was hesitant 😬 about was putting my personal access token in the public `angular.json` file. Instead I made a script to deploy any project by passing in my token as an environment variable. Come code with me 🤗.
 
