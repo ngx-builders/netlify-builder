@@ -1,5 +1,5 @@
 import { BuilderContext, BuilderOutput, createBuilder } from '@angular-devkit/architect';
-import { JsonObject } from '@angular-devkit/core';
+import { json } from '@angular-devkit/core';
 import { Schema } from './schema';
 
 const NetlifyAPI = require('netlify');
@@ -7,7 +7,7 @@ const NetlifyAPI = require('netlify');
 export default createBuilder<any>(
   async (builderConfig: Schema, context: BuilderContext): Promise<BuilderOutput> => {
     context.reportStatus(`Executing deploy...`);
-    context.logger.info(`Executing deploy command ...... `);
+    context.logger.info(`Executing netlify deploy command ...... `);
     let buildResult;
     if (builderConfig.noBuild) {
       context.logger.info(`📦 Skipping build`);
@@ -15,15 +15,22 @@ export default createBuilder<any>(
     } else {
       const configuration = builderConfig.configuration ? builderConfig.configuration : 'production';
 
+      const overrides = {
+        // this is an example how to override the workspace set of options
+        ...(builderConfig.baseHref && { baseHref: builderConfig.baseHref })
+      };
+
       if (!context.target) {
         throw new Error('Cannot deploy the application without a target');
       }
+
+      context.logger.info(`📦 Building "${context.target.project}". Configuration: "${configuration}".${builderConfig.baseHref ? ' Your base-href: "' + builderConfig.baseHref + '"' : ''}`);
 
       const build = await context.scheduleTarget({
         target: 'build',
         project: context.target !== undefined ? context.target.project : '',
         configuration
-      });
+      }, overrides as json.JsonObject);
 
       buildResult = await build.result;
     }
