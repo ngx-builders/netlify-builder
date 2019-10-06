@@ -73,6 +73,9 @@ npm link @netlify-builder/deploy
 ```sh
 ng run builder-test:deploy
 ```
+
+## Link to [Step by Step Guide](https://www.netlify.com/blog/2019/09/17/using-the-angular-builder-for-netlify/)
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
