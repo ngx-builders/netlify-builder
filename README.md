@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/ngx-builders/netlify-builder.svg?branch=master)](https://travis-ci.org/nitishk72/netlify-builder)
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 # Netlify Builder demo
 
 
@@ -86,6 +86,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://www.youtube.com/c/NitishKumarSingh"><img src="https://avatars2.githubusercontent.com/u/15886737?v=4" width="100px;" alt="Nitish Kumar Singh"/><br /><sub><b>Nitish Kumar Singh</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=nitishk72" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/shaikh"><img src="https://avatars1.githubusercontent.com/u/4083228?v=4" width="100px;" alt="siraj"/><br /><sub><b>siraj</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=Shaikh" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://iamsurajdc.js.org"><img src="https://avatars0.githubusercontent.com/u/32074031?v=4" width="100px;" alt="Suraj Chandgude"/><br /><sub><b>Suraj Chandgude</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=iamsurajdc" title="Code">💻</a></td>
   </tr>
 </table>
 
