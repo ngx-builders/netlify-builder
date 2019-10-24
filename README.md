@@ -85,7 +85,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://www.youtube.com/c/NitishKumarSingh"><img src="https://avatars2.githubusercontent.com/u/15886737?v=4" width="100px;" alt="Nitish Kumar Singh"/><br /><sub><b>Nitish Kumar Singh</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=nitishk72" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/shaikh"><img src="https://avatars1.githubusercontent.com/u/4083228?v=4" width="100px;" alt="siraj"/><br /><sub><b>siraj</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=Shaikh" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Shaikh-Ubaid"><img src="https://avatars2.githubusercontent.com/u/43722035?v=4" width="100px;" alt="Shaikh-Ubaid"/><br /><sub><b>Shaikh-Ubaid</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=Shaikh-Ubaid" title="Documentation">📖</a></td>
     <td align="center"><a href="https://iamsurajdc.js.org"><img src="https://avatars0.githubusercontent.com/u/32074031?v=4" width="100px;" alt="Suraj Chandgude"/><br /><sub><b>Suraj Chandgude</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=iamsurajdc" title="Code">💻</a></td>
     <td align="center"><a href="https://www.santoshyadav.dev"><img src="https://avatars3.githubusercontent.com/u/11923975?v=4" width="100px;" alt="Santosh Yadav"/><br /><sub><b>Santosh Yadav</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=santoshyadav198613" title="Code">💻</a></td>
   </tr>
