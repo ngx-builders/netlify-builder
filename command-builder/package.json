@@ -5,6 +5,9 @@
   "main": "index.js",
   "builders": "./builders.json",
   "schematics": "./collection.json",
+  "ng-add": {
+    "save": "devDependencies"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/santoshyadav198613/netlify-builder.git"
