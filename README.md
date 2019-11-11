@@ -1,5 +1,25 @@
 [![Build Status](https://travis-ci.org/ngx-builders/netlify-builder.svg?branch=master)](https://travis-ci.org/nitishk72/netlify-builder)
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
+
+## **Deploy your Angular app to Netlify directly from the Angular CLI! 🚀**
+### Pre-requisites
+- Angular project created via [Angular CLI](https://github.com/angular/angular-cli) v8.3.0 or greater.
+
+### Steps:
+1. run ```ng add @netlify-builder/deploy``` to add necessary dependencies. Once, it get installed,you will be prompted to enter (a) Site Id and (b) netlfy Token
+  ![Screenshot](screenshots/step-1.png)
+2. run ```ng deploy``` assuming that you have [Angular CLI](https://github.com/angular/angular-cli) installed globally
+
+    OR
+    
+    add below script to ```package.json```
+   ```
+   "deploy":"ng deploy"
+   ```
+
+   ![Screenshot](screenshots/step-2.png)
+
+
 # Netlify Builder demo
 
 
