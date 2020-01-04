@@ -108,7 +108,7 @@ export function netlifyBuilder(options: NgAddOptions): Rule {
                 "siteId": options.siteID,
             }
         }
-        addPackageJsonDependencies();
+        
         tree.overwrite(workspacePath, JSON.stringify(workspace, null, 2));
 
         return tree;
