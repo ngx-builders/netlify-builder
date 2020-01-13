@@ -1,4 +1,4 @@
-[![npm downloads](https://img.shields.io/npm/dt/@netlify-builder/deploy?label=npm%20downloads)]
+![npm downloads](https://img.shields.io/npm/dt/@netlify-builder/deploy?label=npm%20downloads)
 ![npm (scoped)](https://img.shields.io/npm/v/@netlify-builder/deploy)
 [![Build Status](https://travis-ci.org/ngx-builders/netlify-builder.svg?branch=master)](https://travis-ci.org/nitishk72/netlify-builder)
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
