@@ -9,7 +9,7 @@ branches:
   - master
 
 before_script:
-  - cd command-builder
+  - cd src
   - npm install
   - npm install -g @angular-devkit/schematics-cli
 
