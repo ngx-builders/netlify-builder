@@ -29,7 +29,7 @@ This repository contains an example of the Angular CLI Architect API.
 
 ## Builder
 
-You can find the Architect builder in the `command-builder` directory.
+You can find the Architect builder in the `src` directory.
 
 ## Sample application
 
@@ -42,7 +42,7 @@ MIT
 
 ## Setup
 
-1. Move to command-builder and run the below command
+1. Move to src and run the below command
 
 ```sh
 yarn install
