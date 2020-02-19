@@ -1,5 +1,25 @@
 import { Rule, SchematicContext, SchematicsException, Tree, chain } from '@angular-devkit/schematics';
 import { experimental, JsonParseMode, parseJson } from '@angular-devkit/core';
+import {
+    addPackageJsonDependency,
+    NodeDependency,
+    NodeDependencyType
+} from 'schematics-utilities';
+
+function addPackageJsonDependencies(): Rule {
+    return (host: Tree, context: SchematicContext) => {
+        const dependencies: NodeDependency[] = [
+            { type: NodeDependencyType.Default, version: '~3.0.0', name: '@netlify-builder/deploy' }
+        ];
+
+        dependencies.forEach(dependency => {
+            addPackageJsonDependency(host, dependency);
+            context.logger.log('info', `✅️ Added "${dependency.name}" into ${dependency.type}`);
+        });
+
+        return host;
+    };
+}
 
 function getWorkspace(host: Tree): { path: string; workspace: experimental.workspace.WorkspaceSchema } {
     const possibleFiles = ['/angular.json', '/.angular.json'];
@@ -99,7 +119,8 @@ export function netlifyBuilder(options: NgAddOptions): Rule {
 export default function (options: NgAddOptions): Rule {
     return chain(
         [
-            netlifyBuilder(options)
+            netlifyBuilder(options),
+            addPackageJsonDependencies()
         ]
     )
 }
