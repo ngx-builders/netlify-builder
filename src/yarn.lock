@@ -90,12 +90,12 @@
     semver "6.3.0"
     semver-intersect "1.4.0"
 
-"@types/jasmine@^3.3.12":
+"@types/jasmine@3.5.0":
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.5.0.tgz#2ad2006c8a937d20df20a8fee86071d0f730ef99"
   integrity sha512-kGCRI9oiCxFS6soGKlyzhMzDydfcPix9PpTkr7h11huxOxhWwP37Tg7DYBaQ18eQTNreZEuLkhpbGSqVNZPnnw==
 
-"@types/node@^11.13.4":
+"@types/node@11.15.3":
   version "11.15.3"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.15.3.tgz#cb7f19846a83ac5a88fc22756b74633cdeb476a7"
   integrity sha512-5RzvXVietaB8S4dwDjxjltAOHtTO87fiksjqjWGZih97j6KSrdCDaRfmYMNrgrLM87odGBrsTHAl6N3fLraQaw==
@@ -942,7 +942,7 @@ jasmine-growl-reporter@~2.0.0:
   dependencies:
     growl "^1.10.5"
 
-jasmine-node@^3.0.0:
+jasmine-node@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/jasmine-node/-/jasmine-node-3.0.0.tgz#f12b6fdd24633402ec23e8ea6fef6ffbcb464f90"
   integrity sha512-vUa5Q7bQYwHHqi6FlJYndiKqZp+d+c3MKe0QUMwwrC4JRmoRV3zkg0buxB/uQ6qLh0NO34TNstpAnvaZ6xGlAA==
@@ -963,7 +963,7 @@ jasmine-reporters@~1.0.0:
   dependencies:
     mkdirp "~0.3.5"
 
-jasmine@^3.4.0:
+jasmine@3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/jasmine/-/jasmine-3.5.0.tgz#7101eabfd043a1fc82ac24e0ab6ec56081357f9e"
   integrity sha512-DYypSryORqzsGoMazemIHUfMkXM7I7easFaxAvNM3Mr6Xz3Fy36TupTrAOxZWN8MVKEU5xECv22J4tUQf3uBzQ==
@@ -1959,7 +1959,7 @@ through2@^2.0.0, through2@~2.0.0:
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
 
-ts-node@^8.1.0:
+ts-node@8.5.4:
   version "8.5.4"
   resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-8.5.4.tgz#a152add11fa19c221d0b48962c210cf467262ab2"
   integrity sha512-izbVCRV68EasEPQ8MSIGBNK9dc/4sYJJKYA+IarMQct1RtEot6Xp0bXuClsbUSnKpg50ho+aOAx8en5c+y4OFw==
@@ -1994,7 +1994,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^3.4.3, typescript@^3.6.4:
+typescript@3.7.3, typescript@^3.6.4:
   version "3.7.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.3.tgz#b36840668a16458a7025b9eabfad11b66ab85c69"
   integrity sha512-Mcr/Qk7hXqFBXMN7p7Lusj1ktCBydylfQM/FZCk5glCNQJrCUKPkMHdo9R0MTFWsC/4kPFvDS0fDPvukfCkFsw==
