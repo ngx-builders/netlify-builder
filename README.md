@@ -45,55 +45,19 @@ MIT
 1. Move to src and run the below command
 
 ```sh
-yarn install
+npm i
 ```
 
 2. Run the below command to build the package
 
 ```sh
-yarn build
+npm run build
 ```
 
 3. run the below command to link the package
 
 ```
 npm link
-```
-
-## To test pacakge
-
-1. Move to builder-test and run the below command
-
-```sh
-yarn install
-```
-
-2. Link the package
-
-```sh
-npm link @netlify-builder/deploy
-```
-
-3. Provide below config in angular.json
-```json
-   "deploy": {
-          "builder": "@netlify-builder/deploy:deploy",
-          "options": {
-            "command": "deploy",
-            "outputPath": "dist/builder-test",
-            "netlifyToken": "[tokenValue]",
-            "siteId": "[siteId]",
-            "args": [
-              "src/main.ts"
-            ]
-          }
-        }
-```
-
-4. Test the command
-
-```sh
-ng run builder-test:deploy
 ```
 
 ## Link to [Step by Step Guide](https://www.netlify.com/blog/2019/09/17/using-the-angular-builder-for-netlify/)
