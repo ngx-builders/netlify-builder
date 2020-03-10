@@ -5,4 +5,5 @@ export interface Schema {
     netlifyToken?: string;
     siteId?: string;
     baseHref?: string;
+    create?: boolean;
 }
