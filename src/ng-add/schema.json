@@ -6,17 +6,16 @@
     "properties": {
         "siteID": {
             "type": "string",
-            "description": "You can find the Site ID on Netlify Settings/Genral",
-            "x-prompt": "API ID( Site ID ) of Netlify project"
+            "description": "You can find the Site ID on Netlify Settings/General",
+            "x-prompt": "API ID( Site ID ) of Netlify project (optional)"
         },
         "netlifyToken": {
             "type": "string",
             "description": "You can create a new API for free !",
-            "x-prompt": "Personal Access Tokens of Netlify Account"
+            "x-prompt": "Personal Access Tokens of Netlify Account (required)"
         }
     },
     "required": [
-        "siteID",
         "netlifyToken"
     ]
 }
