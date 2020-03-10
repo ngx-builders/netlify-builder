@@ -33,7 +33,7 @@
     "create": {
       "type": "boolean",
       "default": false,
-      "description": "Creates the site if it does not exists"
+      "description": "Creates the site if it does not exists or no site id is set"
     }
   }
 }

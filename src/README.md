@@ -53,6 +53,11 @@ Skip build process during deployment.
 This can be used when you are sure that you haven't changed anything and want to deploy with the latest artifact.
 This command causes the `--configuration` setting to have no effect.
 
+#### --create <a name="no-build"></a>
+ * __optional__
+ * Default: `false` (string)
+ * Example:
+    * `ng deploy --create` – Will create a new site if there is not site id or the site id is invalid
 
 ## License
 
