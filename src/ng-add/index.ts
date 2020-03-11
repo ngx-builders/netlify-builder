@@ -1,17 +1,15 @@
 import { Rule, SchematicContext, SchematicsException, Tree, chain } from '@angular-devkit/schematics';
 import { experimental, JsonParseMode, parseJson } from '@angular-devkit/core';
-import {
-    addPackageJsonDependency,
-    NodeDependency,
-    NodeDependencyType
-} from 'schematics-utilities';
+import { addPackageJsonDependency, NodeDependency, NodeDependencyType } from 'schematics-utilities';
 
 function addPackageJsonDependencies(): Rule {
     return (host: Tree, context: SchematicContext) => {
+        
+        // always add the package under dev dependencies
         const dependencies: NodeDependency[] = [
-            { type: NodeDependencyType.Default, version: '~3.0.0', name: '@netlify-builder/deploy' }
+            { type: NodeDependencyType.Dev, version: '~3.1.0', name: '@netlify-builder/deploy' }
         ];
-
+        
         dependencies.forEach(dependency => {
             addPackageJsonDependency(host, dependency);
             context.logger.log('info', `✅️ Added "${dependency.name}" into ${dependency.type}`);
@@ -22,30 +20,28 @@ function addPackageJsonDependencies(): Rule {
 }
 
 function getWorkspace(host: Tree): { path: string; workspace: experimental.workspace.WorkspaceSchema } {
-    const possibleFiles = ['/angular.json', '/.angular.json'];
-    const path = possibleFiles.filter(path => host.exists(path))[0];
+    const possibleFiles = ['/angular.json', './angular.json'];
+    const path = possibleFiles.find(path => host.exists(path));
 
-    const configBuffer = host.read(path);
-    if (configBuffer === null) {
+    if (!path) {
         throw new SchematicsException(`Could not find angular.json`);
     }
-    const content = configBuffer.toString();
 
-    let workspace: experimental.workspace.WorkspaceSchema;
-    try {
-        workspace = (parseJson(
-            content,
-            JsonParseMode.Loose
-        ) as {}) as experimental.workspace.WorkspaceSchema;
-    } catch (e) {
-        throw new SchematicsException(`Could not parse angular.json: ` + e.message);
+    const configBuffer = host.read(path);
+    if (!configBuffer) {
+        throw new SchematicsException(`Could not find angular.json`);
     }
 
-    return {
-        path,
-        workspace
-    };
+    const content = configBuffer.toString();
+    let workspace: experimental.workspace.WorkspaceSchema;
 
+    try {
+        workspace = <any>parseJson(content, JsonParseMode.Loose) as experimental.workspace.WorkspaceSchema;
+    } catch (e) {
+        throw new SchematicsException(`Could not parse angular.json: ${e.message}`);
+    }
+
+    return { path, workspace };
 }
 
 interface NgAddOptions {
@@ -56,7 +52,7 @@ interface NgAddOptions {
 
 export function netlifyBuilder(options: NgAddOptions): Rule {
     return (tree: Tree, _context: SchematicContext) => {
-        // Verifying Angular.json
+        // get the workspace details
         const { path: workspacePath, workspace } = getWorkspace(tree);
 
         // getting project name
@@ -93,9 +89,7 @@ export function netlifyBuilder(options: NgAddOptions): Rule {
             !project.architect.build.options.outputPath
         ) {
             throw new SchematicsException(
-                `Cannot read the output path (architect.build.options.outputPath) of the Angular project "${
-                options.project
-                }" in angular.json`
+                `Cannot read the output path(architect.build.options.outputPath) of the Angular project "${options.project}" in angular.json`
             );
         }
 
@@ -108,19 +102,15 @@ export function netlifyBuilder(options: NgAddOptions): Rule {
                 "siteId": options.siteID,
             }
         }
-        
+
         tree.overwrite(workspacePath, JSON.stringify(workspace, null, 2));
-
         return tree;
-
     };
 }
 
 export default function (options: NgAddOptions): Rule {
-    return chain(
-        [
-            netlifyBuilder(options),
-            addPackageJsonDependencies()
-        ]
-    )
+    return chain([
+        netlifyBuilder(options),
+        addPackageJsonDependencies()
+    ]);
 }

@@ -4,3 +4,4 @@ node_modules
 *.js
 *.js.map
 .gitignore
+*.code-workspace
