@@ -1,7 +1,7 @@
-![npm downloads](https://img.shields.io/npm/dt/@netlify-builder/deploy?label=npm%20downloads)
-![npm (scoped)](https://img.shields.io/npm/v/@netlify-builder/deploy)
+[![npm downloads](https://img.shields.io/npm/dt/@netlify-builder/deploy?label=npm%20downloads)](https://www.npmjs.com/package/@netlify-builder/deploy)
+[![npm (scoped)](https://img.shields.io/npm/v/@netlify-builder/deploy)](https://www.npmjs.com/package/@netlify-builder/deploy)
 [![Build Status](https://travis-ci.org/ngx-builders/netlify-builder.svg?branch=master)](https://travis-ci.org/nitishk72/netlify-builder)
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
 
 ## **Deploy your Angular app to Netlify directly from the Angular CLI! 🚀**
 ### Pre-requisites
@@ -75,6 +75,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://iamsurajdc.js.org"><img src="https://avatars0.githubusercontent.com/u/32074031?v=4" width="100px;" alt="Suraj Chandgude"/><br /><sub><b>Suraj Chandgude</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=iamsurajdc" title="Code">💻</a></td>
     <td align="center"><a href="https://www.santoshyadav.dev"><img src="https://avatars3.githubusercontent.com/u/11923975?v=4" width="100px;" alt="Santosh Yadav"/><br /><sub><b>Santosh Yadav</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=santoshyadav198613" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/alan-agius4"><img src="https://avatars3.githubusercontent.com/u/17563226?v=4" width="100px;" alt="Alan Agius"/><br /><sub><b>Alan Agius</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=alan-agius4" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/imranmomin"><img src="https://avatars3.githubusercontent.com/u/6071075?v=4" width="100px;" alt="Imran Momin"/><br /><sub><b>Imran Momin</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=imranmomin" title="Code">💻</a></td>
   </tr>
 </table>
 
