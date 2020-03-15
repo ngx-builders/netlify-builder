@@ -79,6 +79,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/imranmomin"><img src="https://avatars3.githubusercontent.com/u/6071075?v=4" width="100px;" alt=""/><br /><sub><b>Imran Momin</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=imranmomin" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/BioPhoton"><img src="https://avatars1.githubusercontent.com/u/10064416?v=4" width="100px;" alt=""/><br /><sub><b>Michael Hladky</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=BioPhoton" title="Code">💻</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/NileshPatel17"><img src="https://avatars2.githubusercontent.com/u/27020381?v=4" width="100px;" alt=""/><br /><sub><b>Nilesh Patel</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=NileshPatel17" title="Documentation">📖</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
