@@ -58,11 +58,21 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "BioPhoton",
+      "name": "Michael Hladky",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/10064416?v=4",
+      "profile": "https://github.com/BioPhoton",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "netlify-builder",
   "projectOwner": "ngx-builders",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true
 }
