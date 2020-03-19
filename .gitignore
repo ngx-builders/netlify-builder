@@ -5,3 +5,4 @@ node_modules
 *.js.map
 .gitignore
 *.code-workspace
+**/package-lock.json

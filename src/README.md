@@ -43,22 +43,32 @@ This command has no effect if the option `--no-build` option is active.
 
 
 #### --no-build <a name="no-build"></a>
- * __optional__
- * Default: `false` (string)
- * Example:
-    * `ng deploy` – Angular project is build in production mode before the deployment
-    * `ng deploy --no-build` – Angular project is NOT build
+- **optional**
+- Default: `false` (string)
+- Example:
+  - `ng deploy` – Angular project is build in production mode before the deployment
+  - `ng deploy --no-build` – Angular project is NOT build
 
 Skip build process during deployment.
 This can be used when you are sure that you haven't changed anything and want to deploy with the latest artifact.
 This command causes the `--configuration` setting to have no effect.
 
 #### --create <a name="create"></a>
- * __optional__
- * Default: `false` (string)
- * Example:
-    * `ng deploy --create` – Will create a new site if there is no site id or the site id is does not exists on netlify
+- **optional**
+- Default: `false` (string)
+- Example:
+  - `ng deploy --create` – Will create a new site if there is no site id or the site id is does not exists on netlify
 
+#### --base-href <a name="base-href"></a>
+
+- **optional**
+- Default: `undefined` (string)
+- Example:
+  - `ng deploy` – The tag `<base href="/">` remains unchanged in your `index.html`
+  - `ng deploy --base-href=/the-repositoryname/` – The tag `<base href="/the-repositoryname/">` is added to your `index.html`
+
+Specifies the base URL for the application being built.
+Same as `ng build --base-href=/XXX/`
 ## License
 
 MIT
