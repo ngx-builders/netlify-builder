@@ -47,7 +47,7 @@
         "typescript": "3.7.3"
     },
     "dependencies": {
-        "@angular-devkit/architect": "^0.900.0",
+        "@angular-devkit/architect": "^0.901.0",
         "@angular-devkit/core": "^9.0.0",
         "schematics-utilities": "^2.0.0",
         "netlify": "^3.0.0"
