@@ -50,6 +50,6 @@
         "@angular-devkit/architect": "^0.900.0",
         "@angular-devkit/core": "^9.0.0",
         "schematics-utilities": "^2.0.0",
-        "netlify": "^3.0.0"
+        "netlify": "^4.0.0"
     }
 }
