@@ -8,9 +8,9 @@ Deploy your Angular app to Netlify directly from the Angular CLI! 🚀
 
 You will need two things in order to get started
 
-- API ID (Site ID) : Every netlify app have a API ID which uniquly identify that app. You can find this inside your project's Setting/General section.
+- API ID (Site ID) : Every Netlify application has an API ID that uniquely identify the respective app. You can find it inside your project's Setting/General section.
 ![alt text](https://raw.githubusercontent.com/ngx-builders/netlify-builder/master/screenshots/api-id.png)
-- [Personal access tokens](https://app.netlify.com/user/applications#personal-access-tokens) : Acess token give you the ability to communicate with netlify over API. This will help you in pushing the code on Netlify.
+- [Personal access tokens](https://app.netlify.com/user/applications#personal-access-tokens) : Access token gives the ability to communicate with Netlify over API and helps to push the code on Netlify.
 ![alt text](https://raw.githubusercontent.com/ngx-builders/netlify-builder/master/screenshots/personal-access-token.png)
 
 ## Setting up this Builder
@@ -19,11 +19,11 @@ You will need two things in order to get started
 ng add @netlify-builder/deploy
 ```
 
-This command will configure everything, you just need to provide API ID and Personal access tokens when it will ask you for that.
+The above command will configure everything, you just need to provide API ID and Personal access tokens when it will ask you for that.
 
 ## That's it. Now, you are good to go
 
-Now whenever you want to deploy your angular project just run a command `ng run [YOUR_PROJECT_NAME]:deploy` and your project got live with new update.
+Now, Whenever you want to deploy your angular project just run a command `ng run [YOUR_PROJECT_NAME]:deploy` and your project will be deployed with new updates.
 
 
 ## 📦 Options <a name="options"></a>
@@ -57,7 +57,7 @@ This command causes the `--configuration` setting to have no effect.
 - **optional**
 - Default: `false` (string)
 - Example:
-  - `ng deploy --create` – Will create a new site if there is no site id or the site id is does not exists on netlify
+  - `ng deploy --create` – The command will create a new site if there is no site id or the site id does not exists on netlify
 
 #### --base-href <a name="base-href"></a>
 
