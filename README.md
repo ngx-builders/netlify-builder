@@ -8,7 +8,7 @@
 - Angular project created via [Angular CLI](https://github.com/angular/angular-cli) v8.3.0 or greater.
 
 ### Steps:
-1. run ```ng add @netlify-builder/deploy``` to add necessary dependencies. Once, it get installed,you will be prompted to enter (a) Site Id and (b) netlfy Token
+1. run ```ng add @netlify-builder/deploy``` to add necessary dependencies. Once, it get installed,you will be prompted to enter (a) Site Id and (b) Netlify Token
   ![Screenshot](screenshots/step-1.png)
 2. run ```ng deploy``` assuming that you have [Angular CLI](https://github.com/angular/angular-cli) installed globally
 
@@ -23,7 +23,6 @@
 
 
 # Netlify Builder demo
-
 
 This repository contains an example of the Angular CLI Architect API.
 

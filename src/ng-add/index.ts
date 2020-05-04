@@ -22,13 +22,9 @@ function addPackageJsonDependencies(): Rule {
 function getWorkspace(host: Tree): { path: string; workspace: experimental.workspace.WorkspaceSchema } {
     const possibleFiles = ['/angular.json', './angular.json'];
     const path = possibleFiles.find(path => host.exists(path));
-
-    if (!path) {
-        throw new SchematicsException(`Could not find angular.json`);
-    }
-
     const configBuffer = host.read(path);
-    if (!configBuffer) {
+
+    if (!path || !configBuffer) {
         throw new SchematicsException(`Could not find angular.json`);
     }
 
