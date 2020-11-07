@@ -4,6 +4,13 @@
     "title": "Netlify Builder ng-add schematic",
     "type": "object",
     "properties": {
+        "project": {
+            "type": "string",
+            "description": "The name of the project.",
+            "$default": {
+                "$source": "projectName"
+            }
+        },
         "siteID": {
             "type": "string",
             "description": "You can find the Site ID on Netlify Settings/General",
@@ -15,7 +22,5 @@
             "x-prompt": "Personal Access Tokens of Netlify Account (required)"
         }
     },
-    "required": [
-        "netlifyToken"
-    ]
+    "required": ["netlifyToken"]
 }
