@@ -4,12 +4,12 @@ import { addPackageJsonDependency, NodeDependency, NodeDependencyType } from 'sc
 
 function addPackageJsonDependencies(): Rule {
     return (host: Tree, context: SchematicContext) => {
-        
+
         // always add the package under dev dependencies
         const dependencies: NodeDependency[] = [
             { type: NodeDependencyType.Dev, version: '~3.1.0', name: '@netlify-builder/deploy' }
         ];
-        
+
         dependencies.forEach(dependency => {
             addPackageJsonDependency(host, dependency);
             context.logger.log('info', `✅️ Added "${dependency.name}" into ${dependency.type}`);
@@ -22,7 +22,7 @@ function addPackageJsonDependencies(): Rule {
 function getWorkspace(host: Tree): { path: string; workspace: experimental.workspace.WorkspaceSchema } {
     const possibleFiles = ['/angular.json', './angular.json'];
     const path = possibleFiles.find(path => host.exists(path));
-    const configBuffer = host.read(path);
+    const configBuffer = path ? host.read(path) : undefined;
 
     if (!path || !configBuffer) {
         throw new SchematicsException(`Could not find angular.json`);
