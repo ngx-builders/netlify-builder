@@ -1,6 +1,6 @@
 [![npm downloads](https://img.shields.io/npm/dt/@netlify-builder/deploy?label=npm%20downloads)](https://www.npmjs.com/package/@netlify-builder/deploy)
 [![npm (scoped)](https://img.shields.io/npm/v/@netlify-builder/deploy)](https://www.npmjs.com/package/@netlify-builder/deploy)
-[![Build Status](https://travis-ci.org/ngx-builders/netlify-builder.svg?branch=master)](https://travis-ci.org/nitishk72/netlify-builder)
+![Build Status](https://github.com/ngx-builders/netlify-builder/workflows/Node.js%20CI/badge.svg)
 [![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
 
 ## **Deploy your Angular app to Netlify directly from the Angular CLI! 🚀**

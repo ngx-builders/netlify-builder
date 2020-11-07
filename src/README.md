@@ -17,6 +17,8 @@ You will need two things in order to get started
 
 ```
 ng add @netlify-builder/deploy
+OR 
+ng add @netlify-builder/deploy --project={projectName}
 ```
 
 The above command will configure everything, you just need to provide API ID and Personal access tokens when it will ask you for that.
