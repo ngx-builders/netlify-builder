@@ -23,10 +23,11 @@ export default createBuilder<any>(
             }
 
             const baseHref = builderConfig.baseHref ? `Your base-href: "${builderConfig.baseHref}` : '';
-            context.logger.info(`📦 Building "${context.target.project}". Configuration: "${configuration}". ${baseHref}`);
+            const buildTarget = builderConfig.buildTarget ? builderConfig.buildTarget : 'build';
+            context.logger.info(`📦 Building "${context.target.project}". Configuration: "${configuration}". Build Command: ${buildTarget}. ${baseHref}`);
 
             const build = await context.scheduleTarget({
-                target: 'build',
+                target: buildTarget,
                 project: context.target.project || '',
                 configuration
             }, overrides as json.JsonObject);

@@ -3,6 +3,11 @@
   "title": "schema",
   "description": "Deployment of Angular CLI applications to Netlify",
   "properties": {
+    "buildTarget": {
+      "type": "string",
+      "default": "build",
+      "description": "A build target command."
+    },
     "configuration": {
       "type": "string",
       "default": "production",

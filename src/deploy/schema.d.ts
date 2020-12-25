@@ -1,4 +1,5 @@
 export interface Schema {
+    buildTarget?: string;
     configuration?: string;
     noBuild?: boolean;
     outputPath?: boolean;
