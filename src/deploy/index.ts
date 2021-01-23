@@ -3,7 +3,7 @@ import { json } from '@angular-devkit/core';
 import { Schema } from './schema';
 const NetlifyAPI = require('netlify');
 
-export default createBuilder<any>(
+export default createBuilder(
     async (builderConfig: Schema, context: BuilderContext): Promise<BuilderOutput> => {
         context.reportStatus(`Executing deploy...`);
         context.logger.info(`Executing netlify deploy command ...... `);
