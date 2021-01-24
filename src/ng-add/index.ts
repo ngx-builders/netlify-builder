@@ -1,6 +1,7 @@
 import { Rule, SchematicContext, SchematicsException, Tree, chain } from '@angular-devkit/schematics';
-import { experimental, JsonParseMode, parseJson } from '@angular-devkit/core';
+import {  JsonParseMode, parseJson } from '@angular-devkit/core';
 import { addPackageJsonDependency, NodeDependency, NodeDependencyType } from 'schematics-utilities';
+import { Workspace } from '../interfaces';
 
 function addPackageJsonDependencies(): Rule {
     return (host: Tree, context: SchematicContext) => {
@@ -19,7 +20,7 @@ function addPackageJsonDependencies(): Rule {
     };
 }
 
-function getWorkspace(host: Tree): { path: string; workspace: experimental.workspace.WorkspaceSchema } {
+function getWorkspace(host: Tree): { path: string; workspace: Workspace } {
     const possibleFiles = ['/angular.json', './angular.json'];
     const path = possibleFiles.find(path => host.exists(path));
     const configBuffer = path ? host.read(path) : undefined;
@@ -29,10 +30,10 @@ function getWorkspace(host: Tree): { path: string; workspace: experimental.works
     }
 
     const content = configBuffer.toString();
-    let workspace: experimental.workspace.WorkspaceSchema;
+    let workspace: Workspace;
 
     try {
-        workspace = <any>parseJson(content, JsonParseMode.Loose) as experimental.workspace.WorkspaceSchema;
+        workspace = (parseJson(content, JsonParseMode.Loose) as {}) as Workspace;
     } catch (e) {
         throw new SchematicsException(`Could not parse angular.json: ${e.message}`);
     }
