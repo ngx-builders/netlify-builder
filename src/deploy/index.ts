@@ -132,7 +132,7 @@ export default createBuilder(
             context.logger.info(`✔ Your updated site 🕸  is running at ${response.deploy.ssl_url}`);
             return { success: true };
         } catch (e) {
-            context.logger.error("❌ Deployment failed");
+            context.logger.error(`❌ Deployment failed: ${e.message}`);
             return {
                 error: e.message,
                 success: false
