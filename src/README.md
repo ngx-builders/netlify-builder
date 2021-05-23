@@ -71,6 +71,12 @@ This command causes the `--configuration` setting to have no effect.
 
 Specifies the base URL for the application being built.
 Same as `ng build --base-href=/XXX/`
+
+#### --with-deps <a name="withDeps"></a>
+- **optional**
+- Default: `false` (string)
+- Example:
+  - `ng deploy --with-deps` – Use this flag with Nx, to build your app withDeps.
 ## License
 
 MIT
