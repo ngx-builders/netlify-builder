@@ -7,4 +7,5 @@ export interface Schema {
     siteId?: string;
     baseHref?: string;
     create?: boolean;
+    withDeps?: boolean
 }
