@@ -40,7 +40,7 @@
     "homepage": "https://github.com/santoshyadav198613/netlify-builder#readme",
     "devDependencies": {
         "@types/jasmine": "3.7.4",
-        "@types/node": "14.17.0",
+        "@types/node": "14.17.1",
         "jasmine": "3.7.0",
         "jasmine-node": "3.0.0",
         "ts-node": "10.0.0",
