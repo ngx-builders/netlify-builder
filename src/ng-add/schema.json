@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema",
-    "id": "netlify-builder-deploy-ng-add",
+    "$id": "netlify-builder-deploy-ng-add",
     "title": "Netlify Builder ng-add schematic",
     "type": "object",
     "properties": {
