@@ -168,9 +168,20 @@ export default createBuilder(
             context.logger.info(
                 `Deploying project from 📂 ./${builderConfig.outputPath}`
             );
+
+            let config = {};
+
+            if (builderConfig.functionsPath) {
+                console.log(
+                    `Deploying functions from 📂 ./${builderConfig.functionsPath}`
+                );
+                config = { ...config, fnDir: builderConfig.functionsPath };
+            }
+
             const response = await client.deploy(
                 siteId,
-                builderConfig.outputPath
+                builderConfig.outputPath,
+                config
             );
             context.logger.info(
                 `✔ Your updated site 🕸  is running at ${response.deploy.ssl_url}`
