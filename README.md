@@ -71,21 +71,23 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://www.youtube.com/c/NitishKumarSingh"><img src="https://avatars2.githubusercontent.com/u/15886737?v=4" width="100px;" alt=""/><br /><sub><b>Nitish Kumar Singh</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=nitishk72" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Shaikh-Ubaid"><img src="https://avatars2.githubusercontent.com/u/43722035?v=4" width="100px;" alt=""/><br /><sub><b>Shaikh-Ubaid</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=Shaikh-Ubaid" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://iamsurajdc.js.org"><img src="https://avatars0.githubusercontent.com/u/32074031?v=4" width="100px;" alt=""/><br /><sub><b>Suraj Chandgude</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=iamsurajdc" title="Code">💻</a></td>
-    <td align="center"><a href="https://www.santoshyadav.dev"><img src="https://avatars3.githubusercontent.com/u/11923975?v=4" width="100px;" alt=""/><br /><sub><b>Santosh Yadav</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=santoshyadav198613" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/alan-agius4"><img src="https://avatars3.githubusercontent.com/u/17563226?v=4" width="100px;" alt=""/><br /><sub><b>Alan Agius</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=alan-agius4" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/imranmomin"><img src="https://avatars3.githubusercontent.com/u/6071075?v=4" width="100px;" alt=""/><br /><sub><b>Imran Momin</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=imranmomin" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/BioPhoton"><img src="https://avatars1.githubusercontent.com/u/10064416?v=4" width="100px;" alt=""/><br /><sub><b>Michael Hladky</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=BioPhoton" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.youtube.com/c/NitishKumarSingh"><img src="https://avatars2.githubusercontent.com/u/15886737?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nitish Kumar Singh</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=nitishk72" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Shaikh-Ubaid"><img src="https://avatars2.githubusercontent.com/u/43722035?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Shaikh-Ubaid</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=Shaikh-Ubaid" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://iamsurajdc.js.org"><img src="https://avatars0.githubusercontent.com/u/32074031?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Suraj Chandgude</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=iamsurajdc" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.santoshyadav.dev"><img src="https://avatars3.githubusercontent.com/u/11923975?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Santosh Yadav</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=santoshyadav198613" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/alan-agius4"><img src="https://avatars3.githubusercontent.com/u/17563226?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alan Agius</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=alan-agius4" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/imranmomin"><img src="https://avatars3.githubusercontent.com/u/6071075?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Imran Momin</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=imranmomin" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/BioPhoton"><img src="https://avatars1.githubusercontent.com/u/10064416?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Michael Hladky</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=BioPhoton" title="Code">💻</a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/NileshPatel17"><img src="https://avatars2.githubusercontent.com/u/27020381?v=4" width="100px;" alt=""/><br /><sub><b>Nilesh Patel</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=NileshPatel17" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/NileshPatel17"><img src="https://avatars2.githubusercontent.com/u/27020381?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nilesh Patel</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=NileshPatel17" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://www.joshmorony.com"><img src="https://avatars.githubusercontent.com/u/2578009?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Josh Morony</b></sub></a><br /><a href="https://github.com/ngx-builders/netlify-builder/commits?author=joshuamorony" title="Code">💻</a></td>
   </tr>
 </table>
 
-<!-- markdownlint-enable -->
+<!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
