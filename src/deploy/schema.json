@@ -23,6 +23,10 @@
             "type": "string",
             "description": "This is one of the options you can freely choose according to your needs. --- We will 'deploy' to this folder."
         },
+        "functionsPath": {
+            "type": "string",
+            "description": "Path to the functions folder you want to deploy"
+        },
         "netlifyToken": {
             "type": "string",
             "description": "Acess token give you the ability to communicate with netlify over API."
